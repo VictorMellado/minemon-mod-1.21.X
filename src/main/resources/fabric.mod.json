@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minemon-mod",
+	"version": "${version}",
+	"name": "Minemon Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Verocter"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/VictorMellado/minemon-mod-1.21.X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minemon-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.verocter.MinemonMod"
+		],
+		"fabric-datagen": [
+			"net.verocter.MinemonModDataGenerator"
+		],
+		"client": [
+			"net.verocter.MinemonModClient"
+		]
+	},
+	"mixins": [
+		"minemon-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
